@@ -1,0 +1,35 @@
+
+GET http://127.0.0.1:8080/posts/show?post=c1e21670-7f82-4bc4-b3f8-c0f5d57af8ss
+
+# GET http://127.0.0.1:8080/
+# Some-Header: Some Value
+# Cookie: XDEBUG_SESSION=start
+
+# POST http://127.0.0.1:8080/posts/create
+# Some-Header: Some Value
+
+# {
+# "user_uuid": "e69789c6-ee46-4cc3-becf-6ddf133ca969",
+# "text": "Hello world",
+# "title": "title12"
+# }
+
+
+# POST http://127.0.0.1:8080/posts/comment
+# Some-Header: Some Value
+
+# {
+# "author_uuid": "743bdbc3-3478-4d4f-91e1-cc93ca38e216",
+# "post_uuid": "c1e21670-7f82-4bc4-b3f8-c0f5d57af8f8",
+# "text": "my comment_2"
+# }
+
+# POST http://127.0.0.1:8080/posts/like
+# Some-Header: Some Value
+
+# {
+# "author_uuid": "b8538686-4ee1-4e4b-8938-c3c6705b2706",
+# "post_uuid": "c1e21670-7f82-4bc4-b3f8-c0f5d57af8f8"
+# }
+
+# DELETE http://127.0.0.1:8080/posts?uuid=49eb905c-283d-43d7-9184-57f2d12632b4	

@@ -1,0 +1,29 @@
+{
+    "name": "geekbrains/level_two",
+    "autoload": {
+        "psr-4": {
+            "GeekBrains\\LevelTwo\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "DenAsylbaev",
+            "email": "denis.asylbaev@gmail.com"
+        }
+    ],
+    "require": {
+        "fakerphp/faker": "^1.21",
+        "roave/security-advisories": "dev-latest",
+        "symfony/polyfill-uuid": "^1.27",
+        "monolog/monolog": "^2.9",
+        "vlucas/phpdotenv": "^5.5"
+    },
+    "require-dev": {
+        "fakerphp/faker": "^1.15",
+        "roave/security-advisories": "dev-latest",
+        "phpunit/phpunit": "^9.6"
+    },
+    "scripts": {
+        "test": "phpunit tests --testdox --colors"
+    }
+}

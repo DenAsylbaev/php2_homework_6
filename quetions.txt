@@ -1,0 +1,23 @@
+1 как вызывается экшн из контейнера когда он туда не записывается?
+    Например как тут получается результат
+        $actionClassName = $routes[$method][$path];
+        $action = $container->get($actionClassName);
+
+
+
+2 Почему то эта запись 
+          ->pushHandler(new StreamHandler(
+            __DIR__ . '/logs/blog.error.log',
+            level: Logger::ERROR,
+            bubble: false,
+        ));
+вызвала ошибку 
+    Parse error: syntax error, unexpected ':', expecting ')' 
+    in /Users/denis/Downloads/GEEK_BRAINS/PHP_2/6_new/bootstrap_new.php on line 60
+
+Вот так стало норм 
+    ->pushHandler(new StreamHandler(
+        __DIR__ . '/logs/blog.error.log',
+        Logger::ERROR,
+        false,
+    ))
